@@ -1,0 +1,79 @@
+/* Navbar styling */
+.navbar{
+    display: flex;
+    justify-content:space-between;
+    height: 3.8em;
+    width: 100%;
+    align-items:center;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+
+/* Hamburger */
+.hamburger div{
+    width: 30px;
+    height:3px;
+    background: #f2f5f7;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+/* Placement of navbar elements */
+#navbar-logo{
+    text-decoration: none;
+    font-size:1.2rem;
+    color:#fff;
+    float:left;
+    margin-left: 1em;
+    font-weight: bold;  
+}
+.navbar-item{
+    text-decoration: none;
+    color: #fff;
+}
+.navbar-achievements{
+    margin-right: 25px;
+}
+.navbar-skills{
+    margin-right: 25px;
+}
+.navbar-about{
+    margin-right: 25px;
+}
+.navbar-contact{
+    margin-right: 40px;
+}
+
+
+/* Hover animations on navbar*/
+.navbar-item, .navbar-item::after, .navbar-item::before{
+    transition: all .2s;
+}
+.navbar-item:hover{
+    font-size: 1.3rem;
+}
+#navbar-logo, #navbar-logo::after, #navbar-logo::before{
+    transition: all .2s ease-in-out;
+}
+#navbar-logo:hover{
+    font-size: 1.3rem;
+}
+
+
+
+/* Change color of navbar on scroll */
+.navbar.scrolled{
+    background-color: rgb(255, 255, 255) !important;
+    transition: background-color 100ms ease-in-out;
+    box-shadow: 0 1px 10px black;
+}
+#navbar-logo.scrolled-navbar, .navbar-item.scrolled-navbar{
+    color: rgb(0, 0, 0) !important;
+    transition: all color 100ms ease-in-out;
+}
+
+.ham-line.scrolled-hamburger{
+    background-color: rgb(0, 0, 0) !important;
+}

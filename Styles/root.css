@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap");
+
+
+:root{
+    --title-spacing: 12em;
+    --desktop-font-size: 1.1rem;
+    --mobile-font-size: 1rem;
+    --mobile-spacing: 6em;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    color: black;
+    font-family: "Montserrat", sans-serif;
+    font-size: var(--desktop-font-size);
+}
+
+
+
+html{
+    scroll-behavior: smooth;
+    
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}

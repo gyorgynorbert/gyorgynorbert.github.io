@@ -1,0 +1,18 @@
+.contact{
+    background-color: black;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-title{
+    color: white;
+}
+
+
+.contact a{
+    font-size: 22px;
+    color: white;
+    padding: 0 .35em;
+}
