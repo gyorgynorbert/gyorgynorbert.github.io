@@ -3,28 +3,20 @@ main{
     padding: 0 var(--title-spacing);
 }
 
-
 /*                                      ABOUT                                   */
 
 .about{
-    background-color: #fff;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    
 }
-
 .about-description{
     margin-top: 0;
 }
-
-
-.about-title{
+.main-title{
     position: relative;
-    
 }
-
 .about-title #about-anchor{
     position: absolute;
     left: 0;
@@ -32,20 +24,13 @@ main{
     height: 0;
     width: 0;
 }
-
 .about-description-container{
     width: 100%;
-   
 }
-
 .about-description{
     overflow-wrap: break-word;
     text-align: justify;
     font-size: 1.2rem;
-}
-
-.skills-title{
-    position: relative;
 }
 
 .skills-title #skills-anchor{
@@ -55,11 +40,6 @@ main{
     height: 0;
     width: 0;
 }
-
-.achievements-title{
-    position: relative;
-}
-
 .achievements-title #achievements-anchor{
     position: absolute;
     left: 0;
@@ -67,6 +47,14 @@ main{
     height: 0;
     width: 0;
 }
+.mywork-title #mywork-anchor{
+    position: absolute;
+    left: 0;
+    top: -3em;
+    height: 0;
+    width: 0;
+}
+
 h3{
     padding-left: 1em;
 }
