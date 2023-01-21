@@ -10,7 +10,6 @@
     z-index: 100;
 }
 
-
 /* Hamburger */
 .hamburger div{
     width: 30px;
@@ -26,26 +25,18 @@
     font-size:1.2rem;
     color:#fff;
     float:left;
-    margin-left: 1em;
+    margin-left: 40px;
     font-weight: bold;  
+    word-break: none;
 }
 .navbar-item{
     text-decoration: none;
     color: #fff;
-}
-.navbar-achievements{
-    margin-right: 25px;
-}
-.navbar-skills{
-    margin-right: 25px;
-}
-.navbar-about{
-    margin-right: 25px;
+    margin: 0 12px;
 }
 .navbar-contact{
-    margin-right: 40px;
+    margin-right: 28px;
 }
-
 
 /* Hover animations on navbar*/
 .navbar-item, .navbar-item::after, .navbar-item::before{
@@ -60,8 +51,6 @@
 #navbar-logo:hover{
     font-size: 1.3rem;
 }
-
-
 
 /* Change color of navbar on scroll */
 .navbar.scrolled{
