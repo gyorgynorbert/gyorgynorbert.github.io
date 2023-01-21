@@ -1,23 +1,19 @@
-@media only screen and (max-width: 900px)
+    @media only screen and (max-width: 1000px)
 {
     body{
         font-size:var(--mobile-font-size);
-        
     }
-
     *{
         margin: 0;
         padding: 0;
     }
 
     header{
-        height: 100%;
+        height: 70vh !important;
     }
-
     .navbar{
-        height: 5em;
+        height: 5rem;
     }
-
     .hamburger{
         display: block ;
         position: absolute;
@@ -28,9 +24,9 @@
         z-index: 1000000;
         transition: all 0.7s ease;
     }
-
     #navbar-logo{
-        font-size: 1.1rem;
+        font-size: 1.2rem;
+        margin: 0 15px;
     }
     #navbar-logo, #navbar-logo:after, #navbar-logo::before{
         transition: all .2s ease-in-out;
@@ -53,7 +49,7 @@
     .navbar-right.open{
         clip-path: circle(1000px at 90% -20%);
         -webkit-clip-path: circle(1000px at 90% -10%);
-        transform: scale(2);
+        transform: scale(2.1);
         pointer-events: all;
         display: flex;
         color: white;
@@ -63,11 +59,9 @@
     .hero-title{
         font-size: 2em;
     }
-
     .hero-description{
         width: 100% !important;
     }
-
     .hero-text-container{
         width: calc(100% - 3rem);
         padding: 0;
@@ -75,11 +69,46 @@
         margin-top: 19rem;
     }
 
-    .about{
-        padding: 0 !important;
+    main{
+        padding: 0 15px
+    }
+    .main-title-container{
+        width: 100%;
+        height: 5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .main-title{
+        font-size: 1.5rem;
+    }
+    .main-description{
+        padding: 0;
+        line-height: 2.1rem;
+        font-size: 1.3rem;
+    }
+    .skills h3, p{
+        padding: 1.5rem 0 .2rem 0;
+    }
+    .language-skills{
+        padding: 0;
+    }
+    .skills p{
+        line-height: 2.1rem;
+    }
+    .skills h3{
+        font-size: 1.4rem;
+    }
+    .skills ul{
+        padding-left: 2rem;
+    }
+    .skills li{
+        font-size: 1.3rem;
+    }
+    .contact{
+        height: 10rem;
     }
 }
-
 .toggle .line1{
     transform: rotate(-45deg) translate(-5px,6px);
 }
