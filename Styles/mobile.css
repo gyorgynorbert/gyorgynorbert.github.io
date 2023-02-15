@@ -1,15 +1,19 @@
-    @media only screen and (max-width: 1000px)
+@media only screen and (max-width: 1000px)
 {
     body{
         font-size:var(--mobile-font-size);
     }
+    body.freeze{
+        overflow-y: hidden;
+    }
+
     *{
         margin: 0;
         padding: 0;
     }
 
     header{
-        height: 70vh !important;
+        height: 100vh !important;
     }
     .navbar{
         height: 5rem;
@@ -21,9 +25,14 @@
         right: 5%;
         top: 50%;
         transform: translate(-5%, -50%);
-        z-index: 1000000;
+        z-index: 10;
         transition: all 0.7s ease;
     }
+
+    .ham-line.fading{
+        background-color: white;
+    }
+
     #navbar-logo{
         font-size: 1.2rem;
         margin: 0 15px;
@@ -47,15 +56,27 @@
         pointer-events: none;
     }
     .navbar-right.open{
-        clip-path: circle(1000px at 90% -20%);
-        -webkit-clip-path: circle(1000px at 90% -10%);
+        padding: 0;
+        margin: 0;
+        height: 900px;
+        clip-path: circle(1200px at 90% -20%);
+        -webkit-clip-path: circle(1200px at 90% -10%);
         transform: scale(2.1);
         pointer-events: all;
         display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         color: white;
         left: 0;
+        top: 0;
     }
-   
+    .navbar-item.fade{
+        padding: 0;
+        margin: 0;
+        color: white;
+    }
+
     .hero-title{
         font-size: 2em;
     }
@@ -107,6 +128,9 @@
     }
     .contact{
         height: 10rem;
+    }
+    #button{
+        z-index: 5;
     }
 }
 .toggle .line1{
