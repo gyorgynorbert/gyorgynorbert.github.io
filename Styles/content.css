@@ -1,53 +1,44 @@
-main{
+main {
     background-color: #fff;
     padding: 0 var(--title-spacing);
 }
 
 /*                                      ABOUT                                   */
 
-.about{
+.about {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
 }
-.about-description{
+
+.about-description {
     margin-top: 0;
 }
-.main-title{
+
+.main-title {
     position: relative;
 }
-.about-title #about-anchor{
+
+.about-title #about-anchor {
     position: absolute;
     left: 0;
     top: -3em;
     height: 0;
     width: 0;
 }
-.about-description-container{
+
+.about-description-container {
     width: 100%;
 }
-.about-description{
+
+.about-description {
     overflow-wrap: break-word;
     text-align: justify;
     font-size: 1.2rem;
 }
 
-.skills-title #skills-anchor{
-    position: absolute;
-    left: 0;
-    top: -3em;
-    height: 0;
-    width: 0;
-}
-.achievements-title #achievements-anchor{
-    position: absolute;
-    left: 0;
-    top: -3em;
-    height: 0;
-    width: 0;
-}
-.mywork-title #mywork-anchor{
+.skills-title #skills-anchor {
     position: absolute;
     left: 0;
     top: -3em;
@@ -55,10 +46,27 @@ main{
     width: 0;
 }
 
-h3{
+.achievements-title #achievements-anchor {
+    position: absolute;
+    left: 0;
+    top: -3em;
+    height: 0;
+    width: 0;
+}
+
+.mywork-title #mywork-anchor {
+    position: absolute;
+    left: 0;
+    top: -3em;
+    height: 0;
+    width: 0;
+}
+
+h3 {
     padding-left: 1em;
 }
-p{
+
+p {
     padding-left: 1.2em;
 }
 
@@ -67,13 +75,14 @@ p{
 /*                                      GALLERY                                        */
 /* Gallery title styling */
 
-#gallery-title-container{
+#gallery-title-container {
     height: 3.8em;
-    display:flex;
-   
+    display: flex;
+
     align-items: center;
 }
-.gallery-title{
+
+.gallery-title {
     color: black;
 }
 
@@ -91,5 +100,3 @@ p{
     gap: .1rem;
 
 }
-
-
