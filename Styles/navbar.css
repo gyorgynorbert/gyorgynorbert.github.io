@@ -8,6 +8,7 @@
     position: fixed;
     top: 0;
     z-index: 100;
+    background-image: linear-gradient( rgb(24, 24, 24) 6%, rgba(0, 0, 0, 0));
 }
 
 /* Hamburger */
@@ -54,15 +55,16 @@
 
 /* Change color of navbar on scroll */
 .navbar.scrolled{
-    background-color: rgb(255, 255, 255) !important;
+    background-image: none;
+    background-color: white;
     transition: background-color 100ms ease-in-out;
     box-shadow: 0 1px 10px black;
 }
 #navbar-logo.scrolled-navbar, .navbar-item.scrolled-navbar{
-    color: rgb(0, 0, 0) !important;
+    color: black;
     transition: all color 100ms ease-in-out;
 }
 
 .ham-line.scrolled-hamburger{
-    background-color: rgb(0, 0, 0) !important;
+    background-color: rgb(0, 0, 0);
 }
