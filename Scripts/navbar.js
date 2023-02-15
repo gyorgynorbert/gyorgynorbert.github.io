@@ -2,17 +2,13 @@ $(function () {
   $(document).scroll(function () {
     var $nav = $(".navbar");
     var $a = $("#navbar-logo");
-    var $b = $(".navbar-skills");
-    var $c = $(".navbar-about");
-    var $d = $(".navbar-contact");
-    var $e = $(".navbar-achievements");
+    var $b = $(".navbar-item");
     var $f = $(".ham-line");
     $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
     $a.toggleClass("scrolled-navbar", $(this).scrollTop() > $nav.height());
-    $b.toggleClass("scrolled-navbar", $(this).scrollTop() > $nav.height());
-    $c.toggleClass("scrolled-navbar", $(this).scrollTop() > $nav.height());
-    $d.toggleClass("scrolled-navbar", $(this).scrollTop() > $nav.height());
-    $e.toggleClass("scrolled-navbar", $(this).scrollTop() > $nav.height());
+    $b.toggleClass("scrolled-navbar", $(this).scrollTop() > $nav.height() && !navLinks.classList.contains("open"));
     $f.toggleClass("scrolled-hamburger", $(this).scrollTop() > $nav.height() && !hamburger.classList.contains("toggle"));
   });
 });
+
+
